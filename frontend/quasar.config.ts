@@ -6,15 +6,18 @@ import { fileURLToPath } from 'node:url';
 
 export default defineConfig((ctx) => {
   return {
+
+    eslint: {
+      warnings: true,
+      errors: true,
+    },
     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
     // preFetch: true,
 
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
-    boot: [
-      'i18n'
-    ],
+   boot: ['i18n'],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
     css: [
@@ -25,7 +28,7 @@ export default defineConfig((ctx) => {
     extras: [
       // 'ionicons-v4',
       // 'mdi-v7',
-      // 'fontawesome-v6',
+      'fontawesome-v6',
       // 'eva-icons',
       // 'themify',
       // 'line-awesome',
@@ -66,7 +69,7 @@ export default defineConfig((ctx) => {
 
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
-      
+
       vitePlugins: [
         ['@intlify/unplugin-vue-i18n/vite', {
           // if you want to use Vue I18n Legacy API, you need to set `compositionOnly: false`
