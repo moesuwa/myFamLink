@@ -22,7 +22,9 @@
     "**/index.ts": "${dirname(1)}/${dirname}/🔍",
     "**/page.vue": "${dirname(1)}/${dirname}/📖"
   },
-  "cSpell.words": [],
+  "cSpell.words": [
+    "pinia"
+  ],
   "cSpell.ignorePaths": [
     "**/package.json",
     "**/package-lock.json",
