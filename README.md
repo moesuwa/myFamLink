@@ -1,4 +1,4 @@
-# myFamLink! - my family + link
+# FamLink! - family + link
 
 - 家族間でさまざまな情報の共有ができるアプリケーションです。
 - This app is allowing for sharing various information among family members.
